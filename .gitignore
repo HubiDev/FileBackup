@@ -2,6 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/FileBackup/bin/Debug
-/.vs/FileBackup/v15/Server/sqlite3
-/FileBackup/obj/Debug
+# C-Sharp
+**/bin
+**/obj
+**/.vs
