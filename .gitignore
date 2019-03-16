@@ -2,7 +2,14 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-# C-Sharp
+# Visual Studio
 **/bin
 **/obj
 **/.vs
+
+# Visual Studio Code
+**/.vscode
+
+# golang
+**/pkg
+debug

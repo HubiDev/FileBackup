@@ -8,29 +8,32 @@
         Title="MainView" Height="450" Width="800"
         WindowStartupLocation="CenterScreen">
     <Grid Background="#D5D8DC">
-        <StackPanel HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Orientation="Horizontal">
-            <Button Style="{StaticResource RoundedButtonStyle}"
-                        Content="Settings"
-                        Margin="20"
-                        Width="150"
-                        Height="150"/>
-            <Button Style="{StaticResource RoundedButtonStyle}"
-                        Content="About"
-                        Margin="20"
-                        Width="150"
-                        Height="150"/>
-            <Button Style="{StaticResource RoundedButtonStyle}"
-                        Content="Status"
-                        Margin="20"
-                        Width="150"
-                        Height="150"/>
-            <Button Style="{StaticResource RoundedButtonStyle}"
-                        Content="History"
-                        Margin="20"
-                        Width="150"
-                        Height="150"/>
-        </StackPanel>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button Style="{StaticResource RoundedButtonStyle}"
+                            Content="Settings"
+                            Margin="20"
+                            Width="150"
+                            Height="150"/>
+                <Button Style="{StaticResource RoundedButtonStyle}"
+                            Content="About"
+                            Margin="20"
+                            Width="150"
+                            Height="150"/>
+                <Button Style="{StaticResource RoundedButtonStyle}"
+                            Content="Status"
+                            Margin="20"
+                            Width="150"
+                            Height="150"/>
+                <Button Style="{StaticResource RoundedButtonStyle}"
+                            Content="History"
+                            Margin="20"
+                            Width="150"
+                            Height="150"/>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
