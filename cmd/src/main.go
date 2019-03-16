@@ -1,12 +1,15 @@
 package main
 
 import (
-	"cmdlineparser"
+	"cmdparser"
 	"fmt"
 )
 
 func main() {
 
 	fmt.Print("FileBackup version 0.0.1\n")
-	cmdlineparser.PrintCmdArgs()
+
+	cmdParser := cmdparser.CmdParser{}
+	cmdParser.SaveCmdLineArgs()
+	cmdParser.PrintCmdLineArgs()
 }
