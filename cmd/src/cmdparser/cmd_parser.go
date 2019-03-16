@@ -5,17 +5,19 @@ import (
 	"os"
 )
 
+// CmdParser TODO
 type CmdParser struct {
 	parsedArgs []string     // Args as strings that were passed by the user
 	validArgs  []CmdLineArg // Args that are valid
 	currentArg []CmdLineArg // Arg that was successfully parsed
 }
 
-// Init ...
+// Init TODO
 func (parser *CmdParser) Init(args []CmdLineArg) {
 	parser.validArgs = args
 }
 
+// ValidateCmdLineArgs TODO
 func (parser *CmdParser) ValidateCmdLineArgs() bool {
 
 	result := false
@@ -30,7 +32,7 @@ func (parser *CmdParser) ValidateCmdLineArgs() bool {
 
 			currentValidArg := parser.validArgs[i]
 
-			if currentValidArg.Name() == cmdArg {
+			if currentValidArg.Name == cmdArg {
 				result = true
 				break
 			}
@@ -38,10 +40,6 @@ func (parser *CmdParser) ValidateCmdLineArgs() bool {
 	}
 
 	return result
-}
-
-func (parser *CmdParser) checkArgsSyntax() bool {
-	return true
 }
 
 func (parser *CmdParser) SaveCmdLineArgs() {
